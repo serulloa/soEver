@@ -54,14 +54,62 @@
 		69728AF520593145004545CB /* soEver_testSergio */ = {
 			isa = PBXGroup;
 			children = (
+				69728B0D20593F93004545CB /* VC */,
+				69728B0C20593F8A004545CB /* Models */,
+				69728B0920593F4A004545CB /* API */,
 				69728AF620593145004545CB /* AppDelegate.swift */,
-				69728AF820593145004545CB /* ViewController.swift */,
 				69728AFA20593145004545CB /* Main.storyboard */,
 				69728AFD20593145004545CB /* Assets.xcassets */,
 				69728AFF20593145004545CB /* LaunchScreen.storyboard */,
 				69728B0220593145004545CB /* Info.plist */,
 			);
 			path = soEver_testSergio;
+			sourceTree = "<group>";
+		};
+		69728B0820593F2B004545CB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		69728B0920593F4A004545CB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				69728B0B20593F7B004545CB /* Provider */,
+				69728B0A20593F6E004545CB /* Helpers */,
+				69728B0820593F2B004545CB /* Utils */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		69728B0A20593F6E004545CB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		69728B0B20593F7B004545CB /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
+		69728B0C20593F8A004545CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		69728B0D20593F93004545CB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				69728AF820593145004545CB /* ViewController.swift */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,8 +144,7 @@
 				TargetAttributes = {
 					69728AF220593145004545CB = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3WSJD6HPTZ;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -259,7 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3WSJD6HPTZ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = soEver_testSergio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jorgetardio.soEver-testSergio";
@@ -272,7 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3WSJD6HPTZ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = soEver_testSergio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jorgetardio.soEver-testSergio";
