@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691464EE205FD0D1001C29BE /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691464ED205FD0D1001C29BE /* GenericModel.swift */; };
+		691464F0205FD1A4001C29BE /* ApiHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691464EF205FD1A4001C29BE /* ApiHelpers.swift */; };
+		691464F220600183001C29BE /* ParserGenerico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691464F120600183001C29BE /* ParserGenerico.swift */; };
 		69728AF720593145004545CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69728AF620593145004545CB /* AppDelegate.swift */; };
 		69728AF920593145004545CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69728AF820593145004545CB /* ViewController.swift */; };
 		69728AFC20593145004545CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69728AFA20593145004545CB /* Main.storyboard */; };
 		69728AFE20593145004545CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69728AFD20593145004545CB /* Assets.xcassets */; };
 		69728B0120593145004545CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69728AFF20593145004545CB /* LaunchScreen.storyboard */; };
+		69728B0F205942E7004545CB /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69728B0E205942E7004545CB /* ApiUtils.swift */; };
+		EB32EADCE30B5D617116A1FF /* Pods_soEver_testSergio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7BEE206CF3449B4046FA13 /* Pods_soEver_testSergio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		691464ED205FD0D1001C29BE /* GenericModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
+		691464EF205FD1A4001C29BE /* ApiHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelpers.swift; sourceTree = "<group>"; };
+		691464F120600183001C29BE /* ParserGenerico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserGenerico.swift; sourceTree = "<group>"; };
 		69728AF320593145004545CB /* soEver_testSergio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soEver_testSergio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69728AF620593145004545CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69728AF820593145004545CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		69728AFD20593145004545CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69728B0020593145004545CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69728B0220593145004545CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69728B0E205942E7004545CB /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
+		9E23B8218AA6C2E4612B1B4C /* Pods-soEver_testSergio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver_testSergio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio.debug.xcconfig"; sourceTree = "<group>"; };
+		EC7BEE206CF3449B4046FA13 /* Pods_soEver_testSergio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soEver_testSergio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08A5F3F8980B848228665C6 /* Pods-soEver_testSergio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver_testSergio.release.xcconfig"; path = "Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB32EADCE30B5D617116A1FF /* Pods_soEver_testSergio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17962379C63634F7F4DB8350 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E23B8218AA6C2E4612B1B4C /* Pods-soEver_testSergio.debug.xcconfig */,
+				F08A5F3F8980B848228665C6 /* Pods-soEver_testSergio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3AEA2B2CC291041FCD2B53AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC7BEE206CF3449B4046FA13 /* Pods_soEver_testSergio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69728AEA20593145004545CB = {
 			isa = PBXGroup;
 			children = (
 				69728AF520593145004545CB /* soEver_testSergio */,
 				69728AF420593145004545CB /* Products */,
+				17962379C63634F7F4DB8350 /* Pods */,
+				3AEA2B2CC291041FCD2B53AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +101,8 @@
 		69728B0820593F2B004545CB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				69728B0E205942E7004545CB /* ApiUtils.swift */,
+				691464EF205FD1A4001C29BE /* ApiHelpers.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -79,6 +113,7 @@
 				69728B0B20593F7B004545CB /* Provider */,
 				69728B0A20593F6E004545CB /* Helpers */,
 				69728B0820593F2B004545CB /* Utils */,
+				691464F120600183001C29BE /* ParserGenerico.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -100,6 +135,7 @@
 		69728B0C20593F8A004545CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				691464ED205FD0D1001C29BE /* GenericModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -119,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69728B0520593145004545CB /* Build configuration list for PBXNativeTarget "soEver_testSergio" */;
 			buildPhases = (
+				A8CE8424A52A67FB1E28F97D /* [CP] Check Pods Manifest.lock */,
 				69728AEF20593145004545CB /* Sources */,
 				69728AF020593145004545CB /* Frameworks */,
 				69728AF120593145004545CB /* Resources */,
+				1E6304856B7055596356A2BB /* [CP] Embed Pods Frameworks */,
+				39DD6E0417FE72357193BDDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,13 +218,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E6304856B7055596356A2BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39DD6E0417FE72357193BDDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8CE8424A52A67FB1E28F97D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69728AEF20593145004545CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691464F220600183001C29BE /* ParserGenerico.swift in Sources */,
+				691464F0205FD1A4001C29BE /* ApiHelpers.swift in Sources */,
+				69728B0F205942E7004545CB /* ApiUtils.swift in Sources */,
 				69728AF920593145004545CB /* ViewController.swift in Sources */,
 				69728AF720593145004545CB /* AppDelegate.swift in Sources */,
+				691464EE205FD0D1001C29BE /* GenericModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +395,7 @@
 		};
 		69728B0620593145004545CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E23B8218AA6C2E4612B1B4C /* Pods-soEver_testSergio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -317,6 +409,7 @@
 		};
 		69728B0720593145004545CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08A5F3F8980B848228665C6 /* Pods-soEver_testSergio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -347,6 +440,7 @@
 				69728B0720593145004545CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
