@@ -8,9 +8,11 @@
 
 import Foundation
 import SwiftyJSON
+import ObjectMapper
 
 
-struct GenericModel {
+struct GenericModel : Mappable {
+    
     var id : String?
     var name : String?
     var artworkUrl100 : String?
@@ -43,14 +45,45 @@ struct GenericModel {
         self.url = dimeString(json, nombre: "url")
         self.genres = [Genres.init(json: json["genres"])]
     }
+    
+    init?(map: Map) {
+        return
+    }
+    
+    mutating func mapping(map: Map) {
+        id              <- map["id"]
+        name            <- map["name"]
+        artworkUrl100   <- map["artworkUrl100"]
+        kind            <- map["kind"]
+        artistName      <- map["artistName"]
+        releaseDate     <- map["releaseDate"]
+        url             <- map["url"]
+        genres          <- map["genres"]
+    }
+    
 }
 
-struct Genres {
+struct Genres : Mappable {
+    
+    init?(map: Map) {
+        return
+    }
+    
     var name : String?
     var url : String?
+    
+    init(pName : String, pUrl : String) {
+        self.name = pName
+        self.url = pUrl
+    }
     
     init(json : JSON) {
         name = dimeString(json, nombre: "name")
         self.url = dimeString(json, nombre: "url")
+    }
+    
+    mutating func mapping(map: Map) {
+        name    <- map["name"]
+        url     <- map["url"]
     }
 }

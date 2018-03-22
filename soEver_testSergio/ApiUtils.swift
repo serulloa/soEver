@@ -8,6 +8,10 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
+
+let CONSTANTES = Constantes()
+var jsonDataGenerico : JSON?
 
 struct Constantes {
     let COLORES = Colores()

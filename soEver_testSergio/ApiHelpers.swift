@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
 
 public func dimeString(_ json : JSON, nombre : String) -> String {
     guard let stringResult = json[nombre].string
@@ -17,7 +18,7 @@ public func dimeString(_ json : JSON, nombre : String) -> String {
 }
 
 public func randomIdNumber() -> String {
-    let arrayNumber = 1 + Int(arc4random(100))
+    let arrayNumber = 1 + Int(arc4random_uniform(100))
     return "\(arrayNumber)"
 }
 
@@ -25,7 +26,7 @@ public func randomIdCountry() -> String {
     var arrayCountry = ["es", "us", "fr", "it"]
     print("Original: \(arrayCountry)")
     arrayCountry.shuffle()
-    return arrayCountry.first
+    return arrayCountry.first!
 }
 
 public func randomLorem() -> String{
