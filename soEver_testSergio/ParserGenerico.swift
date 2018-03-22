@@ -15,7 +15,6 @@ import SwiftyJSON
 class ParserGenerico: NSObject {
     
     static let shared = ParserGenerico()
-    var json : String?
     
     @available(*, deprecated)
     func getDataFromParseUno() -> [GenericModel] {

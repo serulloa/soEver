@@ -1,0 +1,6 @@
+framework module Pods_soEver_testSergio {
+  umbrella header "Pods-soEver_testSergio-umbrella.h"
+
+  export *
+  module * { export * }
+}

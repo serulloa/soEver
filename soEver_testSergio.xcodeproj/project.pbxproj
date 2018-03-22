@@ -15,6 +15,10 @@
 		69728AFE20593145004545CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69728AFD20593145004545CB /* Assets.xcassets */; };
 		69728B0120593145004545CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69728AFF20593145004545CB /* LaunchScreen.storyboard */; };
 		69728B0F205942E7004545CB /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69728B0E205942E7004545CB /* ApiUtils.swift */; };
+		697F22E92063BAD200AD7189 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22E82063BAD200AD7189 /* MoviesViewController.swift */; };
+		697F22EB2063BAEC00AD7189 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22EA2063BAEC00AD7189 /* AppsViewController.swift */; };
+		697F22ED2063BAF800AD7189 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22EC2063BAF800AD7189 /* BooksViewController.swift */; };
+		697F22EF2063BB0900AD7189 /* SoEverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22EE2063BB0900AD7189 /* SoEverViewController.swift */; };
 		EB32EADCE30B5D617116A1FF /* Pods_soEver_testSergio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7BEE206CF3449B4046FA13 /* Pods_soEver_testSergio.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		69728B0020593145004545CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69728B0220593145004545CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69728B0E205942E7004545CB /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
+		697F22E82063BAD200AD7189 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		697F22EA2063BAEC00AD7189 /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
+		697F22EC2063BAF800AD7189 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		697F22EE2063BB0900AD7189 /* SoEverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoEverViewController.swift; sourceTree = "<group>"; };
 		9E23B8218AA6C2E4612B1B4C /* Pods-soEver_testSergio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver_testSergio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio.debug.xcconfig"; sourceTree = "<group>"; };
 		EC7BEE206CF3449B4046FA13 /* Pods_soEver_testSergio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soEver_testSergio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08A5F3F8980B848228665C6 /* Pods-soEver_testSergio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver_testSergio.release.xcconfig"; path = "Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +149,10 @@
 		69728B0D20593F93004545CB /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				697F22E82063BAD200AD7189 /* MoviesViewController.swift */,
+				697F22EA2063BAEC00AD7189 /* AppsViewController.swift */,
+				697F22EC2063BAF800AD7189 /* BooksViewController.swift */,
+				697F22EE2063BB0900AD7189 /* SoEverViewController.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -269,10 +281,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				691464F220600183001C29BE /* ParserGenerico.swift in Sources */,
+				697F22ED2063BAF800AD7189 /* BooksViewController.swift in Sources */,
+				697F22EF2063BB0900AD7189 /* SoEverViewController.swift in Sources */,
+				697F22EB2063BAEC00AD7189 /* AppsViewController.swift in Sources */,
 				691464F0205FD1A4001C29BE /* ApiHelpers.swift in Sources */,
 				69728B0F205942E7004545CB /* ApiUtils.swift in Sources */,
 				69728AF720593145004545CB /* AppDelegate.swift in Sources */,
 				691464EE205FD0D1001C29BE /* GenericModel.swift in Sources */,
+				697F22E92063BAD200AD7189 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
