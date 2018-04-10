@@ -15,5 +15,6 @@ target 'soEver_testSergio' do
     #pod 'APESuperHUD', :git => 'https://github.com/apegroup/APESuperHUD.git'
     pod 'AlamofireObjectMapper'
     pod 'PKHUD', '~> 5.0'
+    pod 'Kingfisher'
 
 end

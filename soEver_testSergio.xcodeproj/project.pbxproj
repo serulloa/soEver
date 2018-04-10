@@ -19,6 +19,14 @@
 		697F22EB2063BAEC00AD7189 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22EA2063BAEC00AD7189 /* AppsViewController.swift */; };
 		697F22ED2063BAF800AD7189 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22EC2063BAF800AD7189 /* BooksViewController.swift */; };
 		697F22EF2063BB0900AD7189 /* SoEverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22EE2063BB0900AD7189 /* SoEverViewController.swift */; };
+		697F22F320738CEF00AD7189 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22F120738CEF00AD7189 /* CustomCell.swift */; };
+		697F22F420738CEF00AD7189 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697F22F220738CEF00AD7189 /* CustomCell.xib */; };
+		697F22F62073AA0100AD7189 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22F52073AA0100AD7189 /* ReuseIdentifier.swift */; };
+		697F22F92073BBE300AD7189 /* CustomBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F22F72073BBE300AD7189 /* CustomBookCell.swift */; };
+		697F22FA2073BBE300AD7189 /* CustomBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697F22F82073BBE300AD7189 /* CustomBookCell.xib */; };
+		697F230420760F1100AD7189 /* MovieCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F230320760F1100AD7189 /* MovieCustomCell.swift */; };
+		697F2306207637E100AD7189 /* GenericDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F2305207637E100AD7189 /* GenericDetailViewController.swift */; };
+		697F2308207B62DA00AD7189 /* WebViewGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F2307207B62DA00AD7189 /* WebViewGenericViewController.swift */; };
 		EB32EADCE30B5D617116A1FF /* Pods_soEver_testSergio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7BEE206CF3449B4046FA13 /* Pods_soEver_testSergio.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +45,14 @@
 		697F22EA2063BAEC00AD7189 /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
 		697F22EC2063BAF800AD7189 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		697F22EE2063BB0900AD7189 /* SoEverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoEverViewController.swift; sourceTree = "<group>"; };
+		697F22F120738CEF00AD7189 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		697F22F220738CEF00AD7189 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		697F22F52073AA0100AD7189 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		697F22F72073BBE300AD7189 /* CustomBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBookCell.swift; sourceTree = "<group>"; };
+		697F22F82073BBE300AD7189 /* CustomBookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomBookCell.xib; sourceTree = "<group>"; };
+		697F230320760F1100AD7189 /* MovieCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCustomCell.swift; sourceTree = "<group>"; };
+		697F2305207637E100AD7189 /* GenericDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDetailViewController.swift; sourceTree = "<group>"; };
+		697F2307207B62DA00AD7189 /* WebViewGenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewGenericViewController.swift; sourceTree = "<group>"; };
 		9E23B8218AA6C2E4612B1B4C /* Pods-soEver_testSergio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver_testSergio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio.debug.xcconfig"; sourceTree = "<group>"; };
 		EC7BEE206CF3449B4046FA13 /* Pods_soEver_testSergio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soEver_testSergio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08A5F3F8980B848228665C6 /* Pods-soEver_testSergio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver_testSergio.release.xcconfig"; path = "Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +125,7 @@
 			children = (
 				69728B0E205942E7004545CB /* ApiUtils.swift */,
 				691464EF205FD1A4001C29BE /* ApiHelpers.swift */,
+				697F22F52073AA0100AD7189 /* ReuseIdentifier.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -149,12 +166,27 @@
 		69728B0D20593F93004545CB /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				697F22F020738CBD00AD7189 /* CELL */,
 				697F22E82063BAD200AD7189 /* MoviesViewController.swift */,
 				697F22EA2063BAEC00AD7189 /* AppsViewController.swift */,
 				697F22EC2063BAF800AD7189 /* BooksViewController.swift */,
 				697F22EE2063BB0900AD7189 /* SoEverViewController.swift */,
+				697F2305207637E100AD7189 /* GenericDetailViewController.swift */,
+				697F2307207B62DA00AD7189 /* WebViewGenericViewController.swift */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		697F22F020738CBD00AD7189 /* CELL */ = {
+			isa = PBXGroup;
+			children = (
+				697F22F120738CEF00AD7189 /* CustomCell.swift */,
+				697F22F220738CEF00AD7189 /* CustomCell.xib */,
+				697F22F72073BBE300AD7189 /* CustomBookCell.swift */,
+				697F22F82073BBE300AD7189 /* CustomBookCell.xib */,
+				697F230320760F1100AD7189 /* MovieCustomCell.swift */,
+			);
+			name = CELL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +253,8 @@
 			files = (
 				69728B0120593145004545CB /* LaunchScreen.storyboard in Resources */,
 				69728AFE20593145004545CB /* Assets.xcassets in Resources */,
+				697F22F420738CEF00AD7189 /* CustomCell.xib in Resources */,
+				697F22FA2073BBE300AD7189 /* CustomBookCell.xib in Resources */,
 				69728AFC20593145004545CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,11 +315,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				691464F220600183001C29BE /* ParserGenerico.swift in Sources */,
+				697F2308207B62DA00AD7189 /* WebViewGenericViewController.swift in Sources */,
+				697F22F92073BBE300AD7189 /* CustomBookCell.swift in Sources */,
 				697F22ED2063BAF800AD7189 /* BooksViewController.swift in Sources */,
+				697F2306207637E100AD7189 /* GenericDetailViewController.swift in Sources */,
+				697F22F320738CEF00AD7189 /* CustomCell.swift in Sources */,
+				697F230420760F1100AD7189 /* MovieCustomCell.swift in Sources */,
 				697F22EF2063BB0900AD7189 /* SoEverViewController.swift in Sources */,
 				697F22EB2063BAEC00AD7189 /* AppsViewController.swift in Sources */,
 				691464F0205FD1A4001C29BE /* ApiHelpers.swift in Sources */,
 				69728B0F205942E7004545CB /* ApiUtils.swift in Sources */,
+				697F22F62073AA0100AD7189 /* ReuseIdentifier.swift in Sources */,
 				69728AF720593145004545CB /* AppDelegate.swift in Sources */,
 				691464EE205FD0D1001C29BE /* GenericModel.swift in Sources */,
 				697F22E92063BAD200AD7189 /* MoviesViewController.swift in Sources */,
@@ -354,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -397,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -412,6 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = soEver_testSergio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jorgetardio.soEver-testSergio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,6 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = soEver_testSergio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jorgetardio.soEver-testSergio";
 				PRODUCT_NAME = "$(TARGET_NAME)";

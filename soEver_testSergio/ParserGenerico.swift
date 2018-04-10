@@ -61,9 +61,18 @@ class ParserGenerico: NSObject {
         return arrayData
     }
     
-    func getDataFromWeb(_ completion : @escaping ([GenericModel]) -> ())  {
+    
+    /// <#Description#>
+    ///
+    /// - Parameters:
+    ///   - country: <#country description#>
+    ///   - firstPath: <#firstPath description#>
+    ///   - secondPath: <#secondPath description#>
+    ///   - nElements: <#nElements description#>
+    ///   - completion: <#completion description#>
+    func getDataFromWeb(_ country : String, firstPath : String, secondPath : String, nElements : String, completion : @escaping ([GenericModel]) -> ())  {
         let format = CONSTANTES.LLAMADAS.BASE_URL_APPLE_2018
-        let arguments : [CVarArg] = ["es", CONSTANTES.ARGUMENTOS.MOVIES_FIRST_PATH, CONSTANTES.ARGUMENTOS.MOVIES_SECOND_PATH, "10"]
+        let arguments : [CVarArg] = [country, firstPath, secondPath, nElements]
         let urlString = String(format: format, arguments: arguments)
         let urlRequest = URLRequest(url: URL(string: urlString)!)
         
