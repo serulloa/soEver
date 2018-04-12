@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class WebViewGenericViewController: UIViewController {
+class WebViewGenericViewController : UIViewController {
     
     //MARK: - Properties
     var myUrl : String?
@@ -21,11 +21,14 @@ class WebViewGenericViewController: UIViewController {
     //MARK: - IBActions
     @IBAction func closeVCACTION(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
     }
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIViewController.attemptRotationToDeviceOrientation()
 
         guard let myUrlString = myUrl else { return }
         let urlData = URL(string: myUrlString)!
@@ -41,6 +44,11 @@ class WebViewGenericViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
     }
     
 }

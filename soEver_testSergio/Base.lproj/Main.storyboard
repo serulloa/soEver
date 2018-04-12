@@ -620,10 +620,10 @@
             </objects>
             <point key="canvasLocation" x="2401" y="1105"/>
         </scene>
-        <!--Web View Generico View Controller-->
+        <!--Web View Generic View Controller-->
         <scene sceneID="AaB-GJ-ST2">
             <objects>
-                <viewController storyboardIdentifier="WebViewGenericoViewController" id="Vlk-uI-2lR" customClass="WebViewGenericoViewController" customModule="soEver_testSergio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewGenericoViewController" id="Vlk-uI-2lR" customClass="WebViewGenericViewController" customModule="soEver_testSergio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cH5-Iq-jLP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
