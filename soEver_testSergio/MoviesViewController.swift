@@ -65,20 +65,24 @@ class MoviesViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showFromMovies" {
+            let VcDetail = segue.destination as! GenericDetailViewController
+            let selectId = myCollectionView.indexPathsForSelectedItems?.first?.row
+            let objectId = arrayGenerico[selectId ?? 0]
+            
+            VcDetail.dataModel = objectId
+            VcDetail.imageDetail = diccionarioImagenes[objectId.id!]!
+        }
     }
-    */
 
 }
 
 //MARK: - Extension
-extension MoviesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension MoviesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collecitonView: UICollectionView) -> Int {
         return 1
@@ -96,14 +100,35 @@ extension MoviesViewController: UICollectionViewDelegate, UICollectionViewDataSo
                                          placeholder: nil,
                                          options: [.transition(ImageTransition.fade(1))],
                                          progressBlock: nil,
-                                         completionHandler: nil)
+                                         completionHandler: { (imageData, error, cacheType, imageUrl) in
+                                            guard let imageDataDes = imageData else {return}
+                                            diccionarioImagenes[model.id!] = imageDataDes
+                                            
+            })
         }
+        
+        customCell = cell
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         imagenSeleccionada = customCell?.myMovieImg.image
         performSegue(withIdentifier: "showFromMovies", sender: self)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let cellSpacing = CGFloat(1)
+        let leftRightMar = CGFloat(20)
+        let numColmuns = CGFloat(2)
+        let totalCellSpace = cellSpacing * (numColmuns - 1)
+        let screenWidth = UIScreen.main.bounds.width
+        let width = (screenWidth - leftRightMar - totalCellSpace) / numColmuns
+        var height = CGFloat(270)
+        height = width * height / 180
+        return CGSize(width: width, height: height)
     }
     
 }

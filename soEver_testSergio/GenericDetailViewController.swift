@@ -143,7 +143,7 @@ class GenericDetailViewController: UITableViewController {
 extension GenericDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

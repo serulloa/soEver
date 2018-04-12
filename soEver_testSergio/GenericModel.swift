@@ -47,6 +47,7 @@ struct GenericModel : Mappable {
     }
     
     init?(map: Map) {
+        artworkUrl100 = artworkUrl100?.replacingOccurrences(of:"200x200", with:"600x600")
         return
     }
     
@@ -59,6 +60,12 @@ struct GenericModel : Mappable {
         releaseDate     <- map["releaseDate"]
         url             <- map["url"]
         genres          <- map["genres"]
+        
+        replaceQuality()
+    }
+    
+    mutating func replaceQuality() {
+        artworkUrl100 = artworkUrl100?.replacingOccurrences(of:"200x200", with:"600x600")
     }
     
 }

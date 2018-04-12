@@ -9,10 +9,17 @@
 import Foundation
 import UIKit
 import SwiftyJSON
+import ObjectMapper
 
 public func dimeString(_ json : JSON, nombre : String) -> String {
     guard let stringResult = json[nombre].string
         else { return "" }
+    
+    return stringResult
+}
+
+public func dimeMap(_ json : Map, nombre : String) -> Map {
+    let stringResult = json[nombre]
     
     return stringResult
 }
