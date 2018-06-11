@@ -128,7 +128,7 @@ class GenericDetailViewController: UITableViewController {
         let parser = ParserGenerico()
         
         HUD.show(.progress)
-        parser.getDataFromWeb("us", firstPath: CONSTANTES.ARGUMENTOS.BOOKS_FIRST_PATH, secondPath: CONSTANTES.ARGUMENTOS.BOOKS_SECOND_PATH, nElements: "10") { (result) in
+        parser.getDataFromWebObf("us", firstPath: CONSTANTES.ARGUMENTOS.BOOKS_FIRST_PATH, secondPath: CONSTANTES.ARGUMENTOS.BOOKS_SECOND_PATH, nElements: "10") { (result) in
             DispatchQueue.main.async {
                 self.genericArray = result
                 self.myCollectionView.reloadData()

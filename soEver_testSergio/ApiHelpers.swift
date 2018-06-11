@@ -48,6 +48,22 @@ public func randomLorem() -> String{
     return arrayLorem.first!
 }
 
+public func randomString(length: Int) -> String {
+    
+    let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    let len = UInt32(letters.length)
+    
+    var randomString = ""
+    
+    for _ in 0 ..< length {
+        let rand = arc4random_uniform(len)
+        var nextChar = letters.character(at: Int(rand))
+        randomString += NSString(characters: &nextChar, length: 1) as String
+    }
+    
+    return randomString
+}
+
 public func muestraAlertController (_ myTitle : String, myMessage : String, array : [UIAlertAction]?) -> UIAlertController {
     
     let alert = UIAlertController(title : myTitle, message : myMessage, preferredStyle : .alert)

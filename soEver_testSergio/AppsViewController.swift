@@ -65,7 +65,7 @@ class AppsViewController: UIViewController {
         let parser = ParserGenerico()
         
         HUD.show(.progress)
-        parser.getDataFromWeb("us",
+        parser.getDataFromWebObf("us",
                               firstPath: CONSTANTES.ARGUMENTOS.APPS_IOS_FIRST_PATH,
                               secondPath: CONSTANTES.ARGUMENTOS.APPS_IOS_SECOND_PATH,
                               nElements: "199",

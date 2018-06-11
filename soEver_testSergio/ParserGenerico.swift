@@ -70,11 +70,31 @@ class ParserGenerico: NSObject {
     ///   - secondPath: <#secondPath description#>
     ///   - nElements: <#nElements description#>
     ///   - completion: <#completion description#>
+    @available(*, deprecated)
     func getDataFromWeb(_ country : String, firstPath : String, secondPath : String, nElements : String, completion : @escaping ([GenericModel]) -> ())  {
         let format = CONSTANTES.LLAMADAS.BASE_URL_APPLE_2018
         let arguments : [CVarArg] = [country, firstPath, secondPath, nElements]
         let urlString = String(format: format, arguments: arguments)
         let urlRequest = URLRequest(url: URL(string: urlString)!)
+        
+        Alamofire.request(urlRequest).responseArray(keyPath: "feed.results") {  (response: DataResponse<[GenericModel]>) in
+            let projects = response.result.value
+            completion(projects!)
+        }
+    }
+    
+    /// Gets the multimedia data from the apple store obfuscated URL
+    ///
+    /// - Parameters:
+    ///   - country: country to get the data from
+    ///   - firstPath: name of the category
+    ///   - secondPath: name of the sub-category
+    ///   - nElements: number of elements to get
+    ///   - completion: @escaping ([GenericModel]) -> ()
+    func getDataFromWebObf(_ country: String, firstPath : String, secondPath : String, nElements : String, completion : @escaping ([GenericModel]) -> ())  {
+        let args : [CVarArg] = [country, firstPath, secondPath, nElements]
+        
+        let urlRequest = URLRequest(url: URL(string: String(format: Obfuscator.decode(encripted: CONSTANTES.LLAMADAS.BASE_URL_APPLE_2018_OBF, salt: CONSTANTES.SALT.SALT), arguments: args))!)
         
         Alamofire.request(urlRequest).responseArray(keyPath: "feed.results") {  (response: DataResponse<[GenericModel]>) in
             let projects = response.result.value

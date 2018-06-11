@@ -47,7 +47,7 @@ class MoviesViewController: UIViewController {
         let parser = ParserGenerico()
         
         HUD.show(.progress)
-        parser.getDataFromWeb("us",
+        parser.getDataFromWebObf("us",
                               firstPath: CONSTANTES.ARGUMENTOS.MOVIES_FIRST_PATH,
                               secondPath: CONSTANTES.ARGUMENTOS.MOVIES_SECOND_PATH,
                               nElements: "20") { (result) in

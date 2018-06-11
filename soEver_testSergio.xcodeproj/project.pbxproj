@@ -27,6 +27,7 @@
 		697F230420760F1100AD7189 /* MovieCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F230320760F1100AD7189 /* MovieCustomCell.swift */; };
 		697F2306207637E100AD7189 /* GenericDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F2305207637E100AD7189 /* GenericDetailViewController.swift */; };
 		697F2308207B62DA00AD7189 /* WebViewGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F2307207B62DA00AD7189 /* WebViewGenericViewController.swift */; };
+		6B11602820CE85BA00FEFC93 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B11602720CE85BA00FEFC93 /* Obfuscator.swift */; };
 		EB32EADCE30B5D617116A1FF /* Pods_soEver_testSergio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7BEE206CF3449B4046FA13 /* Pods_soEver_testSergio.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		697F230320760F1100AD7189 /* MovieCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCustomCell.swift; sourceTree = "<group>"; };
 		697F2305207637E100AD7189 /* GenericDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDetailViewController.swift; sourceTree = "<group>"; };
 		697F2307207B62DA00AD7189 /* WebViewGenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewGenericViewController.swift; sourceTree = "<group>"; };
+		6B11602720CE85BA00FEFC93 /* Obfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		9E23B8218AA6C2E4612B1B4C /* Pods-soEver_testSergio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver_testSergio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio.debug.xcconfig"; sourceTree = "<group>"; };
 		EC7BEE206CF3449B4046FA13 /* Pods_soEver_testSergio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soEver_testSergio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08A5F3F8980B848228665C6 /* Pods-soEver_testSergio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver_testSergio.release.xcconfig"; path = "Pods/Target Support Files/Pods-soEver_testSergio/Pods-soEver_testSergio.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				69728B0E205942E7004545CB /* ApiUtils.swift */,
 				691464EF205FD1A4001C29BE /* ApiHelpers.swift */,
 				697F22F52073AA0100AD7189 /* ReuseIdentifier.swift */,
+				6B11602720CE85BA00FEFC93 /* Obfuscator.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				697F22F92073BBE300AD7189 /* CustomBookCell.swift in Sources */,
 				697F22ED2063BAF800AD7189 /* BooksViewController.swift in Sources */,
 				697F2306207637E100AD7189 /* GenericDetailViewController.swift in Sources */,
+				6B11602820CE85BA00FEFC93 /* Obfuscator.swift in Sources */,
 				697F22F320738CEF00AD7189 /* CustomCell.swift in Sources */,
 				697F230420760F1100AD7189 /* MovieCustomCell.swift in Sources */,
 				697F22EF2063BB0900AD7189 /* SoEverViewController.swift in Sources */,

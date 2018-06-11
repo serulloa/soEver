@@ -52,7 +52,7 @@ class BooksViewController: UIViewController {
         let parser = ParserGenerico()
         
         HUD.show(.progress)
-        parser.getDataFromWeb("us",
+        parser.getDataFromWebObf("us",
                               firstPath: CONSTANTES.ARGUMENTOS.BOOKS_FIRST_PATH,
                               secondPath: CONSTANTES.ARGUMENTOS.BOOKS_SECOND_PATH,
                               nElements: "20") { (result) in
